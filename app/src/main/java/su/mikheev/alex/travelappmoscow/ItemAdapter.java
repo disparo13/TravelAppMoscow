@@ -59,13 +59,13 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         Item currentWord = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID miwok_text_view_name
-        TextView nameTextView = convertView.findViewById(R.id.miwok_text_view);
+        TextView nameTextView = convertView.findViewById(R.id.item_name);
         // Get the miwok translation from the current Word object and
         // set this text on the name TextView
         nameTextView.setText(currentWord.getItemName());
 
         // Find the TextView in the list_item.xml layout with the ID default text view
-        TextView addressTextView = convertView.findViewById(R.id.default_text_view);
+        TextView addressTextView = convertView.findViewById(R.id.item_address);
         // Get the default translation from the current Word object and
         // set this text on the number TextView
         addressTextView.setText(currentWord.getItemAddress());
@@ -82,7 +82,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         }
 
         // Set theme color for list item
-        View listitems = convertView.findViewById(R.id.items_list);
+        View listitems = convertView.findViewById(R.id.place_list);
         // Find the color that resource ID maps to
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the color for the listview
