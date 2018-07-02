@@ -25,7 +25,7 @@ public class MoscowFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new NumbersFragment();
+            return new ParksFragment();
         } else if (position == 1) {
             return new FamilyFragment();
         } else if (position == 2) {
