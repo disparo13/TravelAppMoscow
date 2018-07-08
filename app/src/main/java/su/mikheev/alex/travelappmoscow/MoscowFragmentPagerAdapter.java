@@ -27,11 +27,11 @@ public class MoscowFragmentPagerAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new ParksFragment();
         } else if (position == 1) {
-            return new FamilyFragment();
+            return new MuseumsFragment();
         } else if (position == 2) {
-            return new ColorsFragment();
+            return new MonumentsFragment();
         } else {
-            return new PhrasesFragment();
+            return new ClubsFragment();
         }
     }
 

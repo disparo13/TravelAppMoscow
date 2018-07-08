@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         MoscowFragmentPagerAdapter adapter = new MoscowFragmentPagerAdapter(getSupportFragmentManager(),
                 MainActivity.this);
 
-
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
 
