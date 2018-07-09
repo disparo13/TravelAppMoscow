@@ -44,6 +44,15 @@ public class ClubsFragment extends Fragment {
 
         items.add(new Item("Glavclub Green Concert", "Ordzhonikidze, 11",
                 "Mon-Sun: 12-9PM"));
+        items.add(new Item("Adrenaline Stadium", "80, к. 17, Leningradsky Ave",
+                "Mon-Sun: 8PM-12PM"));
+        items.add(new Item("16 Tons", "Presnenskiy val, 16",
+                "Mon-Sun: 11AM-6AM"));
+        items.add(new Item("Chinese Pilot Jao Da", "Lubyanskiy Proyezd, 25, b.1",
+                "24h"));
+        items.add(new Item("Izvestia Hall", "Pushkinskaya ploschad, 5",
+                "Mon-Sun: 8PM-12PM"));
+
 
         // Create an {@link ItemAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the

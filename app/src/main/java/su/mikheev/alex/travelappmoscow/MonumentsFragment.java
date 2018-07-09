@@ -44,6 +44,15 @@ public class MonumentsFragment extends Fragment {
 
         items.add(new Item("Vladimir Vysotsky", "Pokrovskie Vorota Square",
                 "24h"));
+        items.add(new Item("Yuri Nikulin", "Tsvetnoy Bulvar, 13",
+                "24h"));
+        items.add(new Item("Yuri Gagarin", "Ploschad Gagarina",
+                "24h"));
+        items.add(new Item("Georgiy Zhukov", "Manezhnaya Ploschad",
+                "24h"));
+        items.add(new Item("Bulat Okudzhava", "Arbat str., 44/45",
+                "24h"));
+
 
         // Create an {@link ItemAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the

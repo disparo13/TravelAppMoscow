@@ -44,6 +44,14 @@ public class MuseumsFragment extends Fragment {
 
         items.add(new Item("Tretyakov Gallery", "Lavrushinsky Ln, 10",
                 "Tue-Sun: 10AM-6PM"));
+        items.add(new Item("Museum of Soviet Arcade Machines", "Kuznetsky Most, 12",
+                "Tue-Sun: 11AM-9PM"));
+        items.add(new Item("Museum of Space and Aeronautics", "Prospekt Mira, 111",
+                "Tue-Sun: 10AM-7PM"));
+        items.add(new Item("Puskin's Art Museum", "Volkhonka str., 12",
+                "Tue-Sun: 11AM-8PM"));
+        items.add(new Item("Jewish Museum & Tolerance Center", "Obraztsova str., 11b1",
+                "Sun-Thu: 12-10PM, Fri: 10AM-3PM"));
 
         // Create an {@link ItemAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the

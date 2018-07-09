@@ -44,6 +44,14 @@ public class ParksFragment extends Fragment {
 
         items.add(new Item("Park Gorkogo", "Park Kultury", "24h",
                 R.drawable.gorky_park));
+        items.add(new Item("Zaryadye", "Varvarka str.", "Mon-Sun: 10AM-8PM",
+                R.drawable.park_zaryadye));
+        items.add(new Item("Izmailovsky", "Bolshogo Kruga val., 7", "24h",
+                R.drawable.izmailovsky_park));
+        items.add(new Item("Ekaterininskiy", "Bolshaya Ekaterininskaya, 27", "Mon-Sun: 7AM-23PM",
+                R.drawable.ekaterininsky_park));
+        items.add(new Item("Park Pobedy", "Pobedy sq, 3G", "24h",
+                R.drawable.park_pobedy));
 
         // Create an {@link ItemAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
