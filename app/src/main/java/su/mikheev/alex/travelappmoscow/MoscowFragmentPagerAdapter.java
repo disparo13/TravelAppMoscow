@@ -5,12 +5,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-
 public class MoscowFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    final int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[]{"Parks", "Museums", "Monuments", "Clubs"};
     private Context context;
+    // The number of pages
+    final int PAGE_COUNT = 4;
+
+    // Defining Tab titles
+    private String tabTitles[] = new String[]{"Parks", "Museums", "Monuments", "Clubs"};
 
     public MoscowFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);

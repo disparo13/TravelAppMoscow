@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class ItemAdapter extends ArrayAdapter<Item> {
     private static final String LOG_TAG = ItemAdapter.class.getSimpleName();
     /**
-     * Resource ID for the background colour of the words list
+     * Resource ID for the background colour of the name of the items list
      **/
     private int mColorResourceId;
 
@@ -55,39 +55,39 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         }
 
 
-        // Get the {@link Word} object located at this position in the list
+        // Get the {@link Item} object located at this position in the list
         Item currentWord = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID miwok_text_view_name
+        // Find the TextView in the items_list.xml layout with the ID item_name
         TextView nameTextView = convertView.findViewById(R.id.item_name);
-        // Get the miwok translation from the current Word object and
+        // Get the item name from the current Item object and
         // set this text on the name TextView
         nameTextView.setText(currentWord.getItemName());
 
-        // Find the TextView in the list_item.xml layout with the ID default text view
+        // Find the TextView in the items_list.xml layout with the ID default text view
         TextView addressTextView = convertView.findViewById(R.id.item_address);
-        // Get the default translation from the current Word object and
-        // set this text on the number TextView
+        // Get the object's address from the current Item object and
+        // set this text on the address TextView
         addressTextView.setText(currentWord.getItemAddress());
 
-        // Find the TextView in the list_item.xml layout with the ID default text view
+        // Find the TextView in the items_list.xml layout with the ID item_working_hours text view
         TextView openedTextView = convertView.findViewById(R.id.item_working_hours);
-        // Get the default translation from the current Word object and
-        // set this text on the number TextView
+        // Get the object's working hours from the current Item object and
+        // set this text on the opened TextView
         openedTextView.setText(currentWord.getItemWorkingHours());
 
-        //Find the ImageView in the list_item.xml layout with the ID image
+        //Find the ImageView in the items_list.xml layout with the ID image
         ImageView itemImageView = convertView.findViewById(R.id.image);
 
         // Checking about image ID, setting view to it and disabling if it's not found
         if (currentWord.hasImage()) {
-            // Get the image from the current Word Object
+            // Get the image from the current Item Object
             itemImageView.setImageResource(currentWord.getImageResourceId());
         } else {
             itemImageView.setVisibility(View.GONE);
         }
 
-        // Set theme color for list item
+        // Set theme color for name string
         View listitems = convertView.findViewById(R.id.place_list);
         // Find the color that resource ID maps to
         int color = ContextCompat.getColor(getContext(), mColorResourceId);

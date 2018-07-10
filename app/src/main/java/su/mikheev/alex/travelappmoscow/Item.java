@@ -62,7 +62,7 @@ public class Item {
     }
 
     /**
-     * @return do we have an image for the word
+     * @return do we have an image for the item
      */
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;

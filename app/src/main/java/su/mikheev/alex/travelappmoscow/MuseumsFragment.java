@@ -54,16 +54,12 @@ public class MuseumsFragment extends Fragment {
                 "Sun-Thu: 12-10PM, Fri: 10AM-3PM"));
 
         // Create an {@link ItemAdapter}, whose data source is a list of Strings. The
-        // adapter knows how to create layouts for each item in the list, using the
-        // simple_list_item_1.xml layout resource defined in the Android framework.
-        // This list item layout contains a single {@link TextView}, which the adapter will set to
-        // display a single word.
+        // adapter knows how to create layouts for each item in the list
         ItemAdapter adapter =
                 new ItemAdapter(getActivity(), items, R.color.category_museums);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // words_listayout file.
+        // There should be a {@link ListView} with the view ID called list
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
