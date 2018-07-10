@@ -70,6 +70,12 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         // set this text on the number TextView
         addressTextView.setText(currentWord.getItemAddress());
 
+        // Find the TextView in the list_item.xml layout with the ID default text view
+        TextView openedTextView = convertView.findViewById(R.id.item_working_hours);
+        // Get the default translation from the current Word object and
+        // set this text on the number TextView
+        openedTextView.setText(currentWord.getItemWorkingHours());
+
         //Find the ImageView in the list_item.xml layout with the ID image
         ImageView itemImageView = convertView.findViewById(R.id.image);
 
