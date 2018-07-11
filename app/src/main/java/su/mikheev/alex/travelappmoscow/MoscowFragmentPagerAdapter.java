@@ -11,12 +11,12 @@ public class MoscowFragmentPagerAdapter extends FragmentPagerAdapter {
     // The number of pages
     final int PAGE_COUNT = 4;
 
-    // Defining Tab titles
-    private String tabTitles[] = new String[]{"Parks", "Museums", "Monuments", "Clubs"};
+    private String mTabTitles[];
 
-    public MoscowFragmentPagerAdapter(FragmentManager fm, Context context) {
+    public MoscowFragmentPagerAdapter(FragmentManager fm, Context context, String tabTitlesIncome[]) {
         super(fm);
         this.context = context;
+        mTabTitles = tabTitlesIncome;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class MoscowFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         // Generate title based on item position
-        return tabTitles[position];
+        return mTabTitles[position];
     }
 
 }

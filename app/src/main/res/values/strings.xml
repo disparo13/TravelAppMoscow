@@ -3,4 +3,11 @@
     <string name="name">Place:</string>
     <string name="address">Address:</string>
     <string name="open">Open:</string>
+    <!-- Tabs -->
+    <string-array name="tabs_array">
+        <item>Parks</item>
+        <item>Museums</item>
+        <item>Monuments</item>
+        <item>Clubs</item>
+    </string-array>
 </resources>

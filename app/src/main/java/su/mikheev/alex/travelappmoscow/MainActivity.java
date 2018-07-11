@@ -17,12 +17,15 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
+        // Getting tab titles from strings array to pass it to FragmentPagerAdapter later
+        String tabTitles[] = getApplicationContext().getResources().getStringArray(R.array.tabs_array);
+
         // Find the view pager that will allow the user to swipe between fragments
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         // Create an adapter that knows which fragment should be shown on each page
         MoscowFragmentPagerAdapter adapter = new MoscowFragmentPagerAdapter(getSupportFragmentManager(),
-                MainActivity.this);
+                MainActivity.this, tabTitles);
 
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
