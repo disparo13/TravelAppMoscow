@@ -1,5 +1,6 @@
 package su.mikheev.alex.travelappmoscow;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -39,19 +40,14 @@ public class MuseumsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.items_list, container, false);
-
+        Context context = getActivity();
         final ArrayList<Item> items = new ArrayList<Item>();
 
-        items.add(new Item("Tretyakov Gallery", "Lavrushinsky Ln, 10",
-                "Tue-Sun: 10AM-6PM"));
-        items.add(new Item("Museum of Soviet Arcade Machines", "Kuznetsky Most, 12",
-                "Tue-Sun: 11AM-9PM"));
-        items.add(new Item("Museum of Space and Aeronautics", "Prospekt Mira, 111",
-                "Tue-Sun: 10AM-7PM"));
-        items.add(new Item("Puskin's Art Museum", "Volkhonka str., 12",
-                "Tue-Sun: 11AM-8PM"));
-        items.add(new Item("Jewish Museum & Tolerance Center", "Obraztsova str., 11b1",
-                "Sun-Thu: 12-10PM, Fri: 10AM-3PM"));
+        items.add(new Item(context.getResources().getStringArray(R.array.tretyakov_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.arcades_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.space_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.pushkin_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.tolerance_array)));
 
         // Create an {@link ItemAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list

@@ -54,7 +54,6 @@ public class ItemAdapter extends ArrayAdapter<Item> {
                     R.layout.item, parent, false);
         }
 
-
         // Get the {@link Item} object located at this position in the list
         Item currentWord = getItem(position);
 

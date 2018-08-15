@@ -21,27 +21,28 @@ public class Item {
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
     /**
-     * @param itemName         - a name for the item in catalogue
-     * @param itemAddress      - a street address for the item
-     * @param itemWorkingHours - described working hours for the item
+     * @param itemArray         - an array with item's description, where
+     *                          1st element - Name
+     *                          2nd element - Address
+     *                          3rd element - Working hours
      */
-    public Item(String itemName, String itemAddress, String itemWorkingHours) {
-        mItemName = itemName;
-        mItemAddress = itemAddress;
-        mItemWorkingHours = itemWorkingHours;
+    public Item(String itemArray[]) {
+        mItemName = itemArray[0];
+        mItemAddress = itemArray[1];
+        mItemWorkingHours = itemArray[2];
     }
 
     /**
-     * @param itemName         - a name for the item in catalogue
-     * @param itemAddress      - a street address for the item
-     * @param itemWorkingHours - described working hours for the item
+     * @param itemArray         - an array with item's description, where
+     *                          1st element - Name
+     *                          2nd element - Address
+     *                          3rd element - Working hours
      * @param imageResourceId  - image resource ID for the item
      */
-    public Item(String itemName, String itemAddress, String itemWorkingHours,
-                int imageResourceId) {
-        mItemName = itemName;
-        mItemAddress = itemAddress;
-        mItemWorkingHours = itemWorkingHours;
+    public Item(String itemArray[], int imageResourceId) {
+        mItemName = itemArray[0];
+        mItemAddress = itemArray[1];
+        mItemWorkingHours = itemArray[2];
         mImageResourceId = imageResourceId;
     }
 

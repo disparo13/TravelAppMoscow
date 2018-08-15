@@ -3,11 +3,120 @@
     <string name="name">Place:</string>
     <string name="address">Address:</string>
     <string name="open">Open:</string>
+
     <!-- Tabs -->
     <string-array name="tabs_array">
         <item>Parks</item>
         <item>Museums</item>
         <item>Monuments</item>
         <item>Clubs</item>
+    </string-array>
+
+    <!-- Here come Clubs -->
+    <string-array name="glavclub_array">
+        <item>Glavclub Green Concert</item>
+        <item>Ordzhonikidze, 11</item>
+        <item>Mon-Sun: 12-9PM</item>
+    </string-array>
+    <string-array name="adrenaline_array">
+        <item>Adrenaline Stadium</item>
+        <item>80, к. 17, Leningradsky Ave</item>
+        <item>Mon-Sun: 8PM-12PM</item>
+    </string-array>
+    <string-array name="tons_array">
+        <item>16 Tons</item>
+        <item>Presnenskiy val, 16</item>
+        <item>Mon-Sun: 11AM-6AM</item>
+    </string-array>
+    <string-array name="jaoda_array">
+        <item>Chinese Pilot Jao Da</item>
+        <item>Lubyanskiy Proyezd, 25, b.1</item>
+        <item>24h</item>
+    </string-array>
+    <string-array name="izvestia_array">
+        <item>Izvestia Hall</item>
+        <item>Pushkinskaya ploschad, 5</item>
+        <item>Mon-Sun: 8PM-12PM</item>
+    </string-array>
+
+    <!-- Here come Monuments -->
+    <string-array name="vysotsky_array">
+        <item>Vladimir Vysotsky</item>
+        <item>Pokrovskie Vorota Square</item>
+        <item>24h</item>
+    </string-array>
+    <string-array name="nikulin_array">
+        <item>Yuri Nikulin</item>
+        <item>Tsvetnoy Bulvar, 13</item>
+        <item>24h</item>
+    </string-array>
+    <string-array name="gagarin_array">
+        <item>Yuri Gagarin</item>
+        <item>Ploschad Gagarina</item>
+        <item>24h</item>
+    </string-array>
+    <string-array name="zhukov_array">
+        <item>Georgiy Zhukov</item>
+        <item>Manezhnaya Ploschad</item>
+        <item>24h</item>
+    </string-array>
+    <string-array name="okudzhava_array">
+        <item>Bulat Okudzhava</item>
+        <item>Arbat str., 44/45</item>
+        <item>24h</item>
+    </string-array>
+
+    <!-- Here come Museums -->
+    <string-array name="tretyakov_array">
+        <item>Tretyakov Gallery</item>
+        <item>Lavrushinsky Ln, 10</item>
+        <item>Tue-Sun: 10AM-6PM</item>
+    </string-array>
+    <string-array name="arcades_array">
+        <item>Museum of Soviet Arcade Machines</item>
+        <item>Kuznetsky Most, 12</item>
+        <item>Tue-Sun: 11AM-9PM</item>
+    </string-array>
+    <string-array name="space_array">
+        <item>Museum of Space and Aeronautics</item>
+        <item>Prospekt Mira, 111</item>
+        <item>Tue-Sun: 10AM-7PM</item>
+    </string-array>
+    <string-array name="pushkin_array">
+        <item>Puskin's Art Museum</item>
+        <item>Volkhonka str., 12</item>
+        <item>Tue-Sun: 11AM-8PM</item>
+    </string-array>
+    <string-array name="tolerance_array">
+        <item>Jewish Museum &amp; Tolerance Center</item>
+        <item>Obraztsova str., 11b1</item>
+        <item>Sun-Thu: 12-10PM, Fri: 10AM-3PM</item>
+    </string-array>
+
+    <!-- Here come Parks -->
+    <string-array name="gorky_array">
+        <item>Park Gorkogo</item>
+        <item>Park Kultury</item>
+        <item>24h</item>
+    </string-array>
+    <string-array name="zar_array">
+        <item>Zaryadye</item>
+        <item>Varvarka str.</item>
+        <item>Mon-Sun: 10AM-8PM</item>
+    </string-array>
+    <string-array name="izm_array">
+        <item>Izmailovsky</item>
+        <item>Bolshogo Kruga val., 7</item>
+        <item>24h</item>
+    </string-array>
+    <string-array name="kate_array">
+        <item>Ekaterininskiy</item>
+        <item>Bolshaya Ekaterininskaya, 27</item>
+        <item>Mon-Sun: 7AM-23PM</item>
+    </string-array>
+    <string-array name="victory_array">
+        <item>Park Pobedy</item>
+        <item>Pobedy sq, 3G</item>
+        <item>24h</item>
     </string-array>
 </resources>

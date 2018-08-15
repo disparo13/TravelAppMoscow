@@ -1,5 +1,6 @@
 package su.mikheev.alex.travelappmoscow;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -39,25 +40,19 @@ public class MonumentsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.items_list, container, false);
-
+        Context context = getActivity();
         final ArrayList<Item> items = new ArrayList<Item>();
 
-        items.add(new Item("Vladimir Vysotsky", "Pokrovskie Vorota Square",
-                "24h"));
-        items.add(new Item("Yuri Nikulin", "Tsvetnoy Bulvar, 13",
-                "24h"));
-        items.add(new Item("Yuri Gagarin", "Ploschad Gagarina",
-                "24h"));
-        items.add(new Item("Georgiy Zhukov", "Manezhnaya Ploschad",
-                "24h"));
-        items.add(new Item("Bulat Okudzhava", "Arbat str., 44/45",
-                "24h"));
-
+        items.add(new Item(context.getResources().getStringArray(R.array.vysotsky_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.nikulin_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.gagarin_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.zhukov_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.okudzhava_array)));
 
         // Create an {@link ItemAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list
         ItemAdapter adapter =
-                new ItemAdapter(getActivity(), items, R.color.category_museums);
+                new ItemAdapter(getActivity(), items, R.color.category_monuments);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list

@@ -1,5 +1,6 @@
 package su.mikheev.alex.travelappmoscow;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -39,20 +40,14 @@ public class ClubsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.items_list, container, false);
-
+        Context context = getActivity();
         final ArrayList<Item> items = new ArrayList<Item>();
 
-        items.add(new Item("Glavclub Green Concert", "Ordzhonikidze, 11",
-                "Mon-Sun: 12-9PM"));
-        items.add(new Item("Adrenaline Stadium", "80, к. 17, Leningradsky Ave",
-                "Mon-Sun: 8PM-12PM"));
-        items.add(new Item("16 Tons", "Presnenskiy val, 16",
-                "Mon-Sun: 11AM-6AM"));
-        items.add(new Item("Chinese Pilot Jao Da", "Lubyanskiy Proyezd, 25, b.1",
-                "24h"));
-        items.add(new Item("Izvestia Hall", "Pushkinskaya ploschad, 5",
-                "Mon-Sun: 8PM-12PM"));
-
+        items.add(new Item(context.getResources().getStringArray(R.array.glavclub_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.adrenaline_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.tons_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.jaoda_array)));
+        items.add(new Item(context.getResources().getStringArray(R.array.izvestia_array)));
 
         // Create an {@link ItemAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -60,7 +55,7 @@ public class ClubsFragment extends Fragment {
         // This list item layout contains a single {@link TextView}, which the adapter will set to
         // display a single word.
         ItemAdapter adapter =
-                new ItemAdapter(getActivity(), items, R.color.category_museums);
+                new ItemAdapter(getActivity(), items, R.color.category_clubs);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

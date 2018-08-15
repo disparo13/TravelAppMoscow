@@ -1,5 +1,6 @@
 package su.mikheev.alex.travelappmoscow;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -39,24 +40,24 @@ public class ParksFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.items_list, container, false);
-
+        Context context = getActivity();
         final ArrayList<Item> items = new ArrayList<Item>();
 
-        items.add(new Item("Park Gorkogo", "Park Kultury", "24h",
+        items.add(new Item(context.getResources().getStringArray(R.array.gorky_array),
                 R.drawable.gorky_park));
-        items.add(new Item("Zaryadye", "Varvarka str.", "Mon-Sun: 10AM-8PM",
+        items.add(new Item(context.getResources().getStringArray(R.array.zar_array),
                 R.drawable.park_zaryadye));
-        items.add(new Item("Izmailovsky", "Bolshogo Kruga val., 7", "24h",
+        items.add(new Item(context.getResources().getStringArray(R.array.izm_array),
                 R.drawable.izmailovsky_park));
-        items.add(new Item("Ekaterininskiy", "Bolshaya Ekaterininskaya, 27", "Mon-Sun: 7AM-23PM",
+        items.add(new Item(context.getResources().getStringArray(R.array.kate_array),
                 R.drawable.ekaterininsky_park));
-        items.add(new Item("Park Pobedy", "Pobedy sq, 3G", "24h",
+        items.add(new Item(context.getResources().getStringArray(R.array.victory_array),
                 R.drawable.park_pobedy));
 
         // Create an {@link ItemAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list
         ItemAdapter adapter =
-                new ItemAdapter(getActivity(), items, R.color.category_museums);
+                new ItemAdapter(getActivity(), items, R.color.category_parks);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list
